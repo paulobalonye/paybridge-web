@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-jakarta), 'Plus Jakarta Sans', sans-serif;
+  --font-heading: var(--font-outfit), 'Outfit', sans-serif;
+
+  --color-p600: #6018a8;
+  --color-p500: #7c22c8;
+  --color-p400: #9d4de8;
+  --color-p300: #bc7ef5;
+  --color-p200: #d9b4fc;
+  --color-p100: #f0e0ff;
+  --color-gold: #e0a800;
+  --color-mint: #00b899;
+  --color-rose: #e0004d;
+  --color-amber: #d97706;
+}
+
+:root {
+  --bg: #f5f0ff;
+  --surface: #ffffff;
+  --card: #ffffff;
+  --border: rgba(124,34,200,.12);
+  --text: #1a0533;
+  --text2: #5c3d7a;
+  --text3: #9370b0;
+  --nav-bg: rgba(250,246,255,0.88);
+  --shadow: 0 4px 24px rgba(124,34,200,.10);
+  --badge-bg: rgba(124,34,200,.07);
+  --input-bg: rgba(124,34,200,.05);
+  --stat-bg: rgba(124,34,200,.06);
+}
+
+[data-theme="dark"] {
+  --bg: #0e0118;
+  --surface: #160426;
+  --card: #1e0836;
+  --border: rgba(156,77,232,.15);
+  --text: #faf6ff;
+  --text2: #d9b4fc;
+  --text3: #bc7ef5;
+  --nav-bg: rgba(14,1,24,.82);
+  --shadow: 0 4px 32px rgba(0,0,0,.4);
+  --badge-bg: rgba(156,77,232,.14);
+  --input-bg: rgba(156,77,232,.08);
+  --stat-bg: rgba(45,10,82,.45);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.35s, color 0.35s;
+}
